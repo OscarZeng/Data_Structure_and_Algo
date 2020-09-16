@@ -1,0 +1,87 @@
+NEVER overthink about the quesitons, Just try to solve it with simple solution
+Firstly use the naive method to solve the problem. Usually the naive solution may actually good enough or it is the best solution
+When the naive solution does not work, try to think wether we can improve the algorithm base on the naive algorithm
+There are conditions that when implementing better solution we may need to rewrite the whole algo, DO IT
+
+When implementing the BFS(Queue)/DFS(Stack), we need to check whether the current point has been visited
+
+After double check your code and still can not find out the problem, maybe your can try to run the code locally.
+Usually there may be some silly mistakes such as wrong word.
+
+Usually its not hard to implement an algo. Pay attention to the details. 
+
+Make sure that your code is robust enough, consider those special cases, including null input, boundary cases
+
+When dealing with binary trees, we can try to regard it as [left part], [root node] and [right part]	
+
+Always pay attention to the boundary condition, which includes [], [). Whether equals makes great importance
+
+When reversing the list, try to use listName.reverse()/listName[:] = listName[::-1] instead of listName = listName[::-1], however, when partially reversing a list, listName[:4] == listName[:4][::-1]
+
+Usually, when negative numbers included, try to consider whether -1 is a special case
+
+#Binary search tips:
+1. Consider the len(nums) == 1, in which case the left<right condition will not satisfy
+2. usually the cases are [left, mid] [mid+1,right], mid = floor(right + left). Hence there may be a condition that mid == left, which indicates the interval is only 2, here we can check specifically to avoid bugs
+3. Remember to check boundary cases which are target == left, target == right, target == (mid = int((right+left)/2))
+
+#Copy similar code:
+Try not to copy the entire code block since there are tons of details you may need to change which you may easily forget and lead to bugs
+What is even worse is that these bugs are often hard to figure out.
+When copy a code block, always remember to check whether each code detail has been changed correctly
+
+
+Some questions are not hard to implement, but hard to analyze.
+Always remember to analyze clearly before the implementation
+
+When confused with the index boundary, we can try to consider doing some basic cases to examine with several examples
+
+When using the backtracking skills, first to understand the meaning of the recursive function.
+The correct recursive funciton will always do his job. So, base on the meaning of the function, we can use itself to write the 
+function itself, that is the meaning of recursion.
+
+When it cames to Generating XXX based on a given number, we can consider using dynamic programming since it is highly possible that we are base on 
+several previous conditions.
+
+Usually the problem can be solved by recursion can also be solved by dynamic programming, when it can be solved by dynamic
+programming, it usually will be a better solution in terms of time complexity
+
+When it cames to all of XXX, a good way will be using the inner function recursion to collect all the possible combination.
+
+When we are using the inner recursion to get all the condition.
+If the element to be add is a mutable object(usually a list), remember to do the copy other wise it will refer to the same object.
+
+Stack will be a perfect data structure for parentness open and close questions since the parentness can open and close independently
+
+
+#Debug with easy logic problem:
+1. Sometims typos and silly mistakes will lead to irrational logic which will make you confusing, 
+always check the code as you are the first time looking at this code, 
+make sure you did not make any stupid mistakes(like typos)
+2. Check the boundary conditions, including len(xx) == 0, len(xx) == 1, x = len(x)
+
+#Reverse Count using range() function:
+1. for i in range(10, 0, -1): left side(10) included, right side(0), not included, so print 10 9 8 7 6 5 4 3 2 1
+2. Usually we print for i in range(len(xx)-1, -1, -1): since xx[len(xx)] index out of range, xx[0] is the first element 
+
+#When doing all the possible combination/permutation.
+1. When it's relatively complicated and elements are numbers, consider to sort it first since sorting will take NlogN, which is not very high
+2. For avoiding repitition, check nums[i] == nums[i-1] after sorting, since usually adjacent same value will usuall result in same combination.
+
+#Generating 2D array in python
+ans = [[0]*n for i(_) in range(n)]
+Here we can not use "ans = [[0]*n]*n " since *n will lead to all the list referring to the same one.
+
+#When renew an array:
+nums[:] = []
+
+#ASCII code in python
+1. convert char into ASCII code: ASCIICode = ord('a')
+2. convert ASCII code into char: a = chr(97)
+
+#Binary conversion to decimals
+a = int("10001000", 2)
+
+^ in python means XOR bitwise, ** means power of number
+
+Binary Search Tree == Binary Sort Tree == AVL Tree

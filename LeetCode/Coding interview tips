@@ -1,0 +1,23 @@
+######################Coding interview tips######################
+
+In general: The whiteboard coding practice is to test basic coding and CS skills. Besides, communication skills also matters. Make sure I communicate with interviewer during the interview process.
+
+Steps of the interview:
+1. Figure out the question specification. DO NOT RUSH TO CODING without thinking through the question.
+	a. Repharse the question and double check with the interviewer, make sure that I understand the question correctly
+	b. Figure out the input format & Constraint. Is the input an array? Will there be negative numbers/Null values? 
+	c. Clarify the output format of the return value.
+
+2. Think out LOUD and think through the question before we actually write the code. 
+	a. List out several potential solutions(Can start with naive solutions but start writing code only when you think the solution is optimal) while think out LOUD
+	b. Constantly thinking out loud is the best way to ace an interview.
+	c. Make sure the interviewer follows my idea so they can correct me when I went to the wrong direction
+
+3. When writing the code, make sure that the interviewer will follow the step of my writing
+	a. List out the strach first, Write proper comments
+	b. Make sure we use the proper names for certain variables
+
+
+4. Test the code in real time(Make sure to design proper test cases)
+
+5. Try not to use tricks(For certain languages) unless we have to.
